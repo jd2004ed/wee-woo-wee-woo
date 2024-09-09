@@ -2,13 +2,6 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 
-body,
-html {
-    /* reset margin and padding so there's no gap between the nav and the screen edges */
-    margin: 0;
-       padding: 0;
-}
-
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     @keyframes floatAnimation {
