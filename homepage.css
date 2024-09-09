@@ -693,7 +693,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -2;
+        /* z-index: -2; */
     }
     #hero-1349 .cs-background:before {
         /* Overlay */
