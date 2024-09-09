@@ -1,1 +1,140 @@
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif; /* Base font for the entire website */
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+}
 
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif; /* Header font for emphasis */
+    font-weight: 700;
+}
+
+/* Colors */
+:root {
+    --primary-color: #43b7ff; /* Example primary color, you can replace this */
+    --secondary-color: #27a3ff; /* Example secondary color */
+    --accent-color: #f948b4; /* Example accent color */
+    --text-color: #333;
+    --background-color: #fff; 
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --background-color: #333; 
+    }
+}
+
+/* General Layout */
+.container {
+    max-width: 960px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* Header */
+header {
+    background-color: var(--background-color);
+    padding: 20px 0;
+    position: relative; /* For positioning elements within */
+}
+
+.navbar-links a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.active-menu {
+    font-weight: bold;
+}
+
+/* Landing Section */
+#landing {
+    background-color: var(--primary-color); /* Using primary color variable */
+    color: #fff; 
+    text-align: center;
+    overflow: hidden; /* To contain the swoosh images */
+}
+
+#landing h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#landing h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.quote-button {
+    background-color: var(--secondary-color); /* Using secondary color variable */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.mock-up {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.swoop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* What We Do Section */
+#what-we-do {
+    background-color: var(--background-color);
+}
+
+#what-we-do h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#what-we-do .graphic-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#what-we-do .dash {
+    width: 40px;
+    height: 3px;
+    background-color: var(--accent-color);
+    margin: 0 15px;
+}
+
+#what-we-do p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+#what-we-do .content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#what-we-do .item {
+    text-align: center;
+    width: 30%; /* Adjust as needed for responsiveness */
+    margin-bottom: 30px;
+}
+
+/* ... add styles for the rest of the sections and elements similarly ... */
