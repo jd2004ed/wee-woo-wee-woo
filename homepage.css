@@ -303,7 +303,7 @@
     #hero-1349 .cs-bubbles1 {
         /* 200px - 450px */
         margin-left: clamp(12.5rem, 20vw, 28.125rem);
-        top: 0rem;
+        top: 10.75rem;
         right: auto;
         left: 50%;
     }
@@ -327,7 +327,7 @@
         margin-right: 50rem;
         right: 50%;
         left: auto;
-        top: 13.125rem;
+        top: 0rem;
         bottom: auto;
     }
 }
