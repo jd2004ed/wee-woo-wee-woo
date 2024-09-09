@@ -310,7 +310,7 @@ html {
     box-sizing: border-box;
     padding: 0;
     background-color: rgba(26, 26, 26, 0.84);
-    position: fixed;
+  /*  position: fixed; */
     z-index: 10000;
   }
   #cs-navigation .cs-top-bar {
