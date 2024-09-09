@@ -10,7 +10,6 @@
         // run the function to check the aria-expanded value
         ariaExpanded();
     });
-
     // checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
     function ariaExpanded() {
         const csUL = document.querySelector('#cs-expanded');
@@ -22,7 +21,6 @@
             csUL.setAttribute('aria-expanded', 'false');
         }
     }
-
     // This script adds a class to the body after scrolling 100px
     // and we used these body.scroll styles to create some on scroll 
     // animations with the navbar
@@ -35,7 +33,6 @@
         document.querySelector('body').classList.remove('scroll')
         }
     });
-
     // mobile nav toggle code
     const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
         for (const item of dropDowns) {
