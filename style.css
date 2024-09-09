@@ -137,4 +137,181 @@ header {
     margin-bottom: 30px;
 }
 
-/* ... add styles for the rest of the sections and elements similarly ... */
+/* Pricing Section */
+#pricing {
+    background-color: var(--background-color);
+}
+
+#pricing .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.price-box {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%; /* Adjust as needed */
+}
+
+.price-box h2 {
+    margin-bottom: 10px;
+}
+
+.price-box span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.price-box h3 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.price-box ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.price-box li {
+    margin-bottom: 10px;
+}
+
+.price-box .button-solid {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: var(--background-color);
+}
+
+#portfolio h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.example-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.example {
+    text-align: center;
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 30px;
+}
+
+.example img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Who We Are Section */
+#who-we-are {
+    background-color: var(--background-color);
+}
+
+#who-we-are h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#who-we-are p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.spotlight {
+    text-align: center;
+}
+
+.partner img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: var(--background-color);
+}
+
+#blog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    text-align: center;
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.blog-image-box {
+    height: 200px; /* Adjust as needed */
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    position: relative; /* For positioning the swoosh image */
+}
+
+.footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.flex-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    text-align: center;
+    width: 30%; /* Adjust as needed */
+    margin-bottom: 30px;
+}
+
+.footer-line {
+    width: 80px;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 10px auto 20px;
+}
+
+.branding {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
