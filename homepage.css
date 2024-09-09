@@ -473,7 +473,7 @@ html {
         padding-bottom: clamp(12.5rem, 16.5vw, 15.625rem);
         box-sizing: border-box;
         overflow: hidden;
-        position: sticky;
+        position: relative;
         z-index: 1;
     }
     #hero-1349:before {
@@ -693,7 +693,7 @@ html {
         position: absolute;
         top: 0;
         left: 0;
-        /* z-index: -2; */
+        z-index: -2;
     }
     #hero-1349 .cs-background:before {
         /* Overlay */
