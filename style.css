@@ -315,3 +315,173 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
 }
+
+/* ... previous styles from body, header, landing section, etc. */
+
+/* What We Do Section (additional styles) */
+.what-topper {
+    background-color: var(--secondary-color); /* Assuming a blue background for this section */
+    color: white;
+    padding: 30px 0;
+}
+
+.what-we-do-topper h2 {
+    color: white; /* Ensure heading text is visible */
+}
+
+.what-we-do-topper p {
+    color: white;
+    line-height: 1.8;
+}
+
+.what-we-do-topper a {
+    color: #ffdd40; /* Example highlight color for links */
+    text-decoration: none;
+}
+
+.what-we-do-content .item {
+    display: flex; /* To align icon and text */
+    align-items: center;
+}
+
+.what-we-do-content .item svg {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+/* Portfolio Section (additional styles) */
+#portfolio2 h2 {
+    color: var(--text-color);
+}
+
+.example-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.example {
+    width: calc(33.33% - 20px); /* 3 columns with some spacing */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.example h3 {
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+
+.example h4 {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.example p {
+    margin-bottom: 20px;
+}
+
+.example .button-solid {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* To allow setting width */
+}
+
+/* Who We Are Section (additional styles) */
+.who-topper {
+    background-color: var(--background-color);
+    padding: 40px 0;
+}
+
+.spotlight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner {
+    text-align: center;
+}
+
+.partner h3 {
+    margin-top: 0;
+}
+
+.partner h4 {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Blog Section (additional styles) */
+.boxes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc(33.33% - 20px); /* 3 columns with spacing */
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.box h3 {
+    margin-top: 10px;
+    color: var(--secondary-color);
+}
+
+.box p {
+    margin-bottom: 20px;
+}
+
+/* Prices Section (additional styles) */
+/* ... styles from previous response ... */
+
+/* Footer (additional styles) */
+.dark-mode-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dark-mode-group p {
+    margin: 0 10px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+    display: block; /* Make links full width */
+    margin-bottom: 10px;
+}
+
+.footer-item.image-box a {
+    display: inline; /* Keep contact info inline */
+    margin: 0 10px;
+}
+
+/* Banner */
+.banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.banner.close {
+    display: none;
+}
+
+/* ... additional styles for any other elements not covered ... */
