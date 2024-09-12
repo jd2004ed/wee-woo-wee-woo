@@ -7,7 +7,7 @@
     #contact-1392 {
         padding: var(--sectionPadding);
         padding-bottom: 0;
-        background-color: #2c3e50;
+        background-color: #f7f7f7;
         position: relative;
         z-index: 10;
     }
@@ -251,7 +251,7 @@
         padding: var(--sectionPadding);
         /* 80px - 100px */
         padding-top: clamp(5rem, 7vw, 6.25rem);
-        background-color: #1a1a1a;
+        background-color: #2c3e50;
         position: relative;
         z-index: 1;
     }
