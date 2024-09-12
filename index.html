@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="homepage.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="header.css"> <!-- Link to your CSS file -->
     <script defer src="nav.js"></script> <!-- Link to your JavaScript file -->
-    <script src="FAQ.js"></script> <!-- Link to your JavaScript file -->
 </head>
 <body>
 <!-- ============================================ -->
@@ -702,4 +701,13 @@
     </div>
 </footer>
 </body>
+    <script>
+        const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+        for (const item of faqItems) {
+            const onClick = () => {
+            item.classList.toggle('active')
+        }
+        item.addEventListener('click', onClick)
+        }
+    </script>
 </html>
