@@ -129,28 +129,6 @@
         object-fit: cover;
     }
 }
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #banner-1401 .cs-background:before {
-        width: 50%;
-        height: 100%;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            right top,
-            from(#2c3e50),
-            to(rgba(44, 62, 80, 0))
-        );
-        background: -o-linear-gradient(left, #2c3e50 0%, rgba(44, 62, 80, 0) 100%);
-        background: linear-gradient(
-            to right,
-            #2c3e50 0%,
-            rgba(44, 62, 80, 0) 100%
-        );
-        opacity: 1;
-    }
-}
-
 /*-- -------------------------- -->
 <---        Content Page        -->
 <--- -------------------------- -*/
