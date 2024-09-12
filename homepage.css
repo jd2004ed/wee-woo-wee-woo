@@ -642,8 +642,9 @@
         top: 0;
         left: 0;
         z-index: -1;
+      background-color: #2c3e50; /* New solid background color */
     }
-    #faq-1411 .cs-background img {
+    /* #faq-1411 .cs-background img {
         position: absolute;
         top: 0;
         left: 0;
@@ -651,7 +652,7 @@
         width: 100%;
         /* Makes img tag act as a background image */
         object-fit: cover;
-    }
+    } */
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
