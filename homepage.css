@@ -732,7 +732,7 @@
     align-items: center;
   }
   #steps-1376 .cs-topper {
-    color: #767676;
+    color: var(--primary);
   }
   #steps-1376 .cs-title {
     max-width: 25ch;
