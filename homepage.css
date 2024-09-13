@@ -852,7 +852,7 @@
     line-height: 1.2em;
     text-align: inherit;
     margin: 0 0 0.75rem 0;
-    color: var(--headerColor);
+    color: #fafbfc;
     transition: color 0.3s;
   }
   #steps-1376 .cs-item-text {
