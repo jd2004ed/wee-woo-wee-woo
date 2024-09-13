@@ -706,7 +706,7 @@
 @media only screen and (min-width: 0rem) {
   #steps-1376 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: #2c3e50;
     /* clips the waves and lines from cause overflow issues */
     overflow: hidden;
     /* setting the row groups to display: contents causes the child cs-items to "appear" as direct children of the parent .cs-card-group */
