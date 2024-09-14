@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #timeline-504 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: #2c3e50;
         /* clips the white line through the bullets */
         overflow: hidden;
     }
@@ -42,7 +42,7 @@
         opacity: 0.8;
     }
     #timeline-504 .cs-color {
-        color: var(--secondary);
+        color: var(--primary);
     }
     #timeline-504 .cs-card-group {
         width: 100%;
@@ -82,7 +82,7 @@
         content: "";
         width: 1.25rem;
         height: 1.25rem;
-        background: var(--secondary);
+        background: var(--primary);
         border-radius: 50%;
         opacity: 1;
         position: absolute;
