@@ -8,7 +8,6 @@
         padding: var(--sectionPadding);
         background-color: #ffffff;
         overflow: hidden; /* Hide overflow to keep the scrolling effect within bounds */
-        position: relative; /* Ensure it’s positioned relative to its normal position */
     }
     #logos-857 .cs-container {
         width: 100%;
@@ -38,9 +37,9 @@
         display: flex;
         flex-wrap: nowrap; /* Prevent wrapping for scrolling effect */
         align-items: center;
-        justify-content: start; /* Align items to start for scrolling */
         gap: 2.5rem;
         animation: scroll 20s linear infinite; /* Add scrolling animation */
+        white-space: nowrap; /* Prevent line breaks for continuous scrolling */
     }
     #logos-857 .cs-logo {
         width: 40%;
@@ -50,10 +49,16 @@
         display: block;
     }
 }
+ /* Duplicate logos to create seamless scrolling */
+    #logos-857 .cs-logo-group::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
  /* Keyframes for the scrolling animation */
     @keyframes scroll {
         from {
-            transform: translateX(100%);
+            transform: translateX(0%);
         }
         to {
             transform: translateX(-100%);
