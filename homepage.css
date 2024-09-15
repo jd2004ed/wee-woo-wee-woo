@@ -20,7 +20,6 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
         position: relative;
-        overflow: hidden; /* Hide overflow to keep the effect smooth */
     }
     #logos-857 .cs-content {
         /* set text align to left if content needs to be left aligned */
@@ -42,6 +41,7 @@
         align-items: center;
         gap: 2.5rem;
         white-space: nowrap; /* Prevent line breaks */
+        animation:scroll-left 30s linear infinite;
     }
     #logos-857 .cs-logo {
         width: 40%;
@@ -58,7 +58,7 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translateX(-100%);
         }
     }
 
