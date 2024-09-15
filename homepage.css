@@ -43,8 +43,7 @@
         animation: scroll-left 20s linear infinite;
         white-space: nowrap; /* Prevent line breaks */
     }
-   #logos-857 .cs-logo-group::before,
-    #logos-857 .cs-logo-group::after {
+   #logos-857 .cs-logo-group::before {
         content: '';
         display: flex;
         flex-wrap: nowrap;
@@ -69,7 +68,7 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-50%);
+            transform: translateX(-100%);
         }
     }
 
