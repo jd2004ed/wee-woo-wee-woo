@@ -42,11 +42,9 @@
         gap: 2.5rem;
         animation: scroll-left 20s linear infinite;
         white-space: nowrap; /* Prevent line breaks */
-        position: absolute; /* Ensure it spans the entire container width */
-        top: 0;
-        left: 0;
         width: 100%;
         /* Ensure content stretches across the full width */
+        position: absolute;
     }
    #logos-857 .cs-logo-group::before {
         content: '';
