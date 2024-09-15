@@ -6,17 +6,16 @@
 @media only screen and (min-width: 0rem) {
     #logos-857 {
         padding: var(--sectionPadding);
-        background-color: #ffffff;
-        overflow: hidden; /* Hide overflow to keep the scrolling effect within bounds */
+        background-color: #f7f7f7;
     }
     #logos-857 .cs-container {
         width: 100%;
         /* changes to 1280px at desktop */
-        max-width: unset;
+        max-width: 50rem;
         margin: auto;
         display: flex;
-        flex-direction: row;
-        align-items: left;
+        flex-direction: column;
+        align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
     }
@@ -35,10 +34,10 @@
     }
     #logos-857 .cs-logo-group {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         gap: 2.5rem;
-        animation: scroll 0s linear infinite; /* Add scrolling animation */
-        white-space: nowrap; /* Prevent line breaks for continuous scrolling */
     }
     #logos-857 .cs-logo {
         width: 40%;
@@ -46,16 +45,6 @@
         height: auto;
         margin: 0;
         display: block;
-    }
-}
- /* Keyframes for the scrolling animation */
-    @keyframes scroll {
-        from {
-            transform: translateX(0%);
-        }
-        to {
-            transform: translateX(-100%);
-        }
     }
 }
 /* Desktop - 1300px */
