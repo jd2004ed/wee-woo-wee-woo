@@ -40,7 +40,7 @@
         align-items: center;
         justify-content: center;
         gap: 2.5rem;
-        animation: 5s slide inifinte linear;
+        animation: slide 5s inifinte linear;
     }
     #logos-857 .cs-logo {
         width: 40%;
