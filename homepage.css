@@ -36,8 +36,10 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: start;
         gap: 2.5rem;
+        max-width: unset;
     }
     #logos-857 .cs-logo {
         width: 40%;
