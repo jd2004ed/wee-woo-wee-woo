@@ -860,7 +860,7 @@
     }
 }
 #rotate {
-    transform: rotate(23deg);
+    transform: rotate(22deg);
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
