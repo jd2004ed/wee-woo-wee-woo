@@ -530,6 +530,15 @@
             <img class="cs-logo" src="https://github.com/user-attachments/assets/e73e0749-e9fd-4ec4-96da-3ba33ce2a9bc" alt="logo" width="150" height="55" loading="lazy" decoding="async">
             <img class="cs-logo" src="https://github.com/user-attachments/assets/ed250e32-c659-4054-851b-51870f153fc3" alt="logo" width="150" height="53" loading="lazy" decoding="async">
             <img class="cs-logo" src="https://github.com/user-attachments/assets/e64444f7-15e2-47af-b3d4-a1ac1400ac4f" alt="logo" width="150" height="61" loading="lazy" decoding="async">
+            <!--double-->
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/8d89da9a-11f2-42b4-a649-f135b24990f9" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/471f86a4-494a-44d4-90ba-f09cc9229937" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/9ceCLYQ7JqhYogHn1dj5/media/64886f004077c97431aac425.svg+xml" alt="logo" width="150" height="65" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/34effb2f-fabd-45a7-b715-e123feb2a530" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/ec22a3ae-a233-48bb-906b-ae31b633a66b" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/e73e0749-e9fd-4ec4-96da-3ba33ce2a9bc" alt="logo" width="150" height="55" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/ed250e32-c659-4054-851b-51870f153fc3" alt="logo" width="150" height="53" loading="lazy" decoding="async">
+            <img class="cs-logo" src="https://github.com/user-attachments/assets/e64444f7-15e2-47af-b3d4-a1ac1400ac4f" alt="logo" width="150" height="61" loading="lazy" decoding="async">
         </div>
     </div>
 </section>
@@ -539,14 +548,14 @@
             const logos = logoGroup.innerHTML;
             
             // Clone the logos multiple times to ensure smooth looping
-            logoGroup.innerHTML = logos + logos + logos;
+            logoGroup.innerHTML = logos + logos;
 
             function startAnimation() {
-                const logoWidth = logoGroup.scrollWidth / 3;  // Divide by 3 because we tripled the content
+                const logoWidth = logoGroup.scrollWidth / 2;  // Divide by 3 because we tripled the content
                 const viewportWidth = window.innerWidth;
                 
                 // Calculate the duration based on logo width and viewport width
-                const duration = (logoWidth / viewportWidth) * 40;  // Adjust 20 to change speed
+                const duration = (logoWidth / viewportWidth) * 80;  // Adjust 20 to change speed
                 
                 logoGroup.style.animationDuration = `${duration}s`;
                 logoGroup.style.animationName = 'scroll-left';
