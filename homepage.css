@@ -41,6 +41,7 @@
         align-items: center;
         gap: 2.5rem;
         animation: scroll-left 20s linear infinite;
+        white-space: nowrap; /* Prevent line breaks */
     }
      #logos-857 .cs-logo-group.second {
         animation: scroll-right 20s linear infinite;
@@ -61,10 +62,10 @@
 /* Animation for left scrolling */
     @keyframes scroll-left {
         0% {
-            transform: translateX(0);
+            transform: translateX(0%);
         }
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-50%);
         }
     }
 
@@ -74,7 +75,7 @@
             transform: translateX(100%);
         }
         100% {
-            transform: translateX(0);
+            transform: translateX(50%);
         }
     }
 
