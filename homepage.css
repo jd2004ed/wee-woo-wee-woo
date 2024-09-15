@@ -861,6 +861,7 @@
 }
 #rotate {
     transform: rotate(25deg);
+}
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #meet-team-1370 .cs-container {
