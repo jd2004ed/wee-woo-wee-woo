@@ -533,17 +533,32 @@
         </div>
     </div>
 </section>
-   <script>
+  <script>
         document.addEventListener('DOMContentLoaded', function() {
             const logoGroup = document.querySelector('.cs-logo-group');
-            const logoWidth = logoGroup.scrollWidth;
+            const logos = logoGroup.innerHTML;
+            
+            // Clone the logos multiple times to ensure smooth looping
+            logoGroup.innerHTML = logos + logos + logos;
 
-            // Clone the logos
-            logoGroup.innerHTML += logoGroup.innerHTML;
+            function startAnimation() {
+                const logoWidth = logoGroup.scrollWidth / 3;  // Divide by 3 because we tripled the content
+                const viewportWidth = window.innerWidth;
+                
+                // Calculate the duration based on logo width and viewport width
+                const duration = (logoWidth / viewportWidth) * 20;  // Adjust 20 to change speed
+                
+                logoGroup.style.animationDuration = `${duration}s`;
+                logoGroup.style.animationName = 'scroll-left';
+                logoGroup.style.animationTimingFunction = 'linear';
+                logoGroup.style.animationIterationCount = 'infinite';
+            }
 
-            // Adjust animation duration based on content width
-            const duration = logoWidth / 50; // Adjust the divisor to change speed
-            logoGroup.style.animationDuration = `${duration}s`;
+            // Start the animation initially
+            startAnimation();
+
+            // Recalculate on window resize
+            window.addEventListener('resize', startAnimation);
         });
     </script>
 <!-- ============================================ -->
