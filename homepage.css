@@ -7,7 +7,6 @@
     #logos-857 {
         padding: var(--sectionPadding);
         background-color: #ffffff;
-        overflow: hidden; /* Hide overflow to keep the effect smooth */
     }
     #logos-857 .cs-container {
         width: 100%;
@@ -28,8 +27,7 @@
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
-        z-index: 1; 
+        align-items: center; 
     }
 
     #logos-857 .cs-title {
@@ -41,8 +39,6 @@
         flex-wrap: nowrap;
         align-items: center;
         gap: 2.5rem;
-        white-space: nowrap; /* Prevent line breaks */
-        animation: scroll-left 30s linear infinite;
     }
     #logos-857 .cs-logo {
         width: 40%;
