@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #logos-857 {
         padding: var(--sectionPadding);
-        background-color: #ffffff;
+        background-color: #f7f7f7;
     }
     #logos-857 .cs-container {
         width: 100%;
@@ -18,8 +18,6 @@
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
-        overflow: hidden;
-        white-space: nowrap;
     }
     #logos-857 .cs-content {
         /* set text align to left if content needs to be left aligned */
@@ -35,12 +33,11 @@
         margin: 0;
     }
     #logos-857 .cs-logo-group {
-        display: inline-block;
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 2.5rem;
-        animation: slide 5s inifinte linear;
     }
     #logos-857 .cs-logo {
         width: 40%;
@@ -55,12 +52,6 @@
     #logos-857 .cs-container {
         max-width: 80rem;
     }
-    @keyframes slide {
-        from {
-            transform: translateX(0%);
-        }
-        to {
-            transform: translateX(-100%)
 }
 /*-- -------------------------- -->
 <---          Reviews           -->
