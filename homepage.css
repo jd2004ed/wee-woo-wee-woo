@@ -42,7 +42,7 @@
         align-items: center;
         gap: 2.5rem;
         white-space: nowrap; /* Prevent line breaks */
-        animation:scroll-left 30s linear infinite;
+        animation: scroll-left 60s linear infinite;
     }
     #logos-857 .cs-logo {
         width: 40%;
@@ -59,7 +59,7 @@
             transform: translateX(0%);
         }
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-50%);
         }
     }
 
