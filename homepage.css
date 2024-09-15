@@ -45,8 +45,9 @@
         animation: scroll-left 30s linear infinite;
     }
     #logos-857 .cs-logo {
-        width: auto;
-        height: 2.5rem;
+        width: 40%;
+        max-width: 7.5rem;
+        height: auto;
         margin: 0;
         display: block;
     }
