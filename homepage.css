@@ -19,6 +19,7 @@
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
         overflow: hidden;
+        white-space: nowrap;
     }
     #logos-857 .cs-content {
         /* set text align to left if content needs to be left aligned */
@@ -34,12 +35,11 @@
         margin: 0;
     }
     #logos-857 .cs-logo-group {
-        display: flex;
+        display: inline-block;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
         gap: 2.5rem;
-        white-space: nowrap;
         animation: 5s slide inifinte linear;
     }
     #logos-857 .cs-logo {
