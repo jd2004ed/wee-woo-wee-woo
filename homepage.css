@@ -11,10 +11,10 @@
     #logos-857 .cs-container {
         width: 100%;
         /* changes to 1280px at desktop */
-        max-width: 50rem;
+        max-width: unset;
         margin: auto;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
@@ -34,10 +34,10 @@
     }
     #logos-857 .cs-logo-group {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         align-items: center;
         flex-direction: row;
-        justify-content: start;
+        justify-content: left;
         gap: 2.5rem;
         max-width: unset;
     }
