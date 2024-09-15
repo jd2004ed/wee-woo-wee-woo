@@ -533,13 +533,6 @@
         </div>
     </div>
 </section>
-  <script>
-         document.addEventListener('DOMContentLoaded', function() {
-            const logoGroup = document.querySelector('.cs-logo-group');
-            const logos = logoGroup.innerHTML;
-            logoGroup.innerHTML = logos + logos+ logos + logos + logos;  // Duplicate logos for seamless scrolling
-        });
-    </script>
 <!-- ============================================ -->
 <!--                   Contact                    -->
 <!-- ============================================ -->
@@ -671,6 +664,13 @@
     </div>
 </footer>
 </body>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+            const logoGroup = document.querySelector('.cs-logo-group');
+            const logos = logoGroup.innerHTML;
+            logoGroup.innerHTML = logos + logos+ logos + logos + logos;  // Duplicate logos for seamless scrolling
+        });
+    </script>
     <script>
         const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
         for (const item of faqItems) {
