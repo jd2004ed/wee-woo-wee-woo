@@ -731,7 +731,7 @@
         text-align: center;
         /* 16px - 24px */
         padding: clamp(1rem, 1.7vw, 1.5rem);
-        background-color: #f7f7f7;
+        background-color: #2c3e50;
         border-radius: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -854,9 +854,6 @@
     #meet-team-1370 .cs-item {
         grid-column: span 6;
     }
-}
-#rotate {
-    transform: rotate(22deg);
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
