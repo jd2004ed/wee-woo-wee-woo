@@ -68,7 +68,7 @@
 /* Wrapper styles for side-by-side layout */
 #cs-wrapper-1411 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width:100%
 }
 
