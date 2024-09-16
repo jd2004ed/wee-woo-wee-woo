@@ -65,17 +65,9 @@
         max-width: 80rem;
     }
 }
-/* Wrapper styles for side-by-side layout */
 #cs-wrapper-1411 {
-    display: flex;
-    flex-direction: row;
-    width:100%
-}
-
-@media only screen and (min-width: 64rem) {
-    #cs-wrapper-1411 {
-        flex-direction: row;
-    }
+        display: flex;
+        flex-direction: column;
 }
 
 /*-- -------------------------- -->
@@ -94,7 +86,7 @@
     }
     #mission-vision-1411 .cs-container {
         width: 100%;
-        max-width: 80rem;
+        max-width: 36.5rem;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -104,7 +96,6 @@
     #mission-vision-1411 .cs-content {
         text-align: left;
         width: 100%;
-        max-width: 46.125rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -117,7 +108,6 @@
         display: flex;
         flex-direction: column;
         gap: clamp(1.75rem, 5vw, 3.75rem);
-        width: 100%;
     }
     #mission-vision-1411 .cs-item {
         flex: 1;
