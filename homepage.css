@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #logos-857 {
         padding: var(--sectionPadding);
-        background-color: #ffffff;
+        background-color: #f7f7f7;
     }
     #logos-857 .cs-container {
         width: 100%;
@@ -18,7 +18,6 @@
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
-        position: relative;
     }
     #logos-857 .cs-content {
         /* set text align to left if content needs to be left aligned */
@@ -27,7 +26,7 @@
         display: flex;
         flex-direction: column;
         /* centers content horizontally, set to flex-start to left align */
-        align-items: center; 
+        align-items: center;
     }
 
     #logos-857 .cs-title {
@@ -35,9 +34,9 @@
     }
     #logos-857 .cs-logo-group {
         display: flex;
-        width: 100%;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
         gap: 2.5rem;
     }
     #logos-857 .cs-logo {
@@ -48,17 +47,6 @@
         display: block;
     }
 }
-
-/* Animation for left scrolling */
-    @keyframes scroll-left {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
 /* Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #logos-857 .cs-container {
