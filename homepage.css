@@ -1131,10 +1131,9 @@
     #services-1378 .cs-item:hover {
         background-color: var(--primary);
     }
-    #services-1378 .cs-item:hover .cs-picture {
-        background-color: var(--primary);
+    #services-1378 .cs-item:hover .cs-icon {
+        color: #2c3e50;
     }
-    #services-1378 .cs-item:hover .cs-icon,
     #services-1378 .cs-item:hover .cs-arrow {
         filter: grayscale(1) brightness(1000%);
     }
