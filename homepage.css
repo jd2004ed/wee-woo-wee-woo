@@ -65,6 +65,18 @@
         max-width: 80rem;
     }
 }
+/* Wrapper styles for side-by-side layout */
+#cs-wrapper-1411 {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 64rem) {
+    #cs-wrapper-1411 {
+        flex-direction: row;
+    }
+}
+
 /*-- -------------------------- -->
 <---     Mission and Vision     -->
 <--- -------------------------- -*/
@@ -72,7 +84,6 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #mission-vision-1411 {
-        text-align: center;
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
         overflow: hidden;
@@ -89,14 +100,13 @@
         gap: clamp(2.5rem, 5vw, 4rem);
     }
     #mission-vision-1411 .cs-content {
-        /* set text align to left if content needs to be left aligned */
         text-align: left;
         width: 100%;
         max-width: 46.125rem;
         display: flex;
         flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
         align-items: flex-start;
+    }
     #mission-vision-1411 .cs-title {
         max-width: 20ch;
         margin: 0;
@@ -111,28 +121,10 @@
         flex: 1;
         min-width: 0;
     }
-    #content-page-1399 h2,
-    #content-page-1399 h3,
-    #content-page-1399 h4,
-    #content-page-1399 h5,
-    #content-page-1399 h6 {
-        font-weight: 700;
-        text-align: inherit;
-        margin: 0 0 1rem 0;
-        color: var(--headerColor);
-    }
-    #content-page-1399 h2 {
-        font-size: 2rem;
-        margin-top: 2rem;
-    }
-    #content-page-1399 h3 {
+    #mission-vision-1411 .cs-h3 {
         font-size: 1.5rem;
-        color: var(--primary);
-    }
-    #content-page-1399 h4,
-    #content-page-1399 h5,
-    #content-page-1399 h6 {
-        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        color: var(--headerColor);
     }
     #mission-vision-1411 .cs-item-text {
         font-size: clamp(1rem, 2.6vw, 1.25rem);
@@ -165,10 +157,13 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #mission-vision-1411 {
-        text-align: left;
+        width: 50%;
+        padding-left: clamp(2.5rem, 5vw, 5rem);
+        padding-right: clamp(2.5rem, 5vw, 5rem);
     }
     #mission-vision-1411 .cs-container {
         align-items: flex-start;
+        margin-left: 0;
     }
     #mission-vision-1411 .cs-content {
         text-align: left;
