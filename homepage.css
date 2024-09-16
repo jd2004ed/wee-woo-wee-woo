@@ -150,6 +150,7 @@
         align-items: center;
         /* 40px - 64px */
         gap: clamp(2.5rem, 5vw, 4rem);
+        text-align: left;
     }
     #reviews-1411 .cs-topper {
         font-size: var(--topperFontSize);
@@ -172,6 +173,7 @@
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
+    text-align: left;
 }
         #reviews-1411 .cs-review-section {
     text-align: left;
