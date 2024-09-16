@@ -65,120 +65,257 @@
         max-width: 80rem;
     }
 }
-#cs-wrapper-1411 {
-        display: flex;
-        flex-direction: column;
-}
-
 /*-- -------------------------- -->
-<---     Mission and Vision     -->
+<---          Reviews           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #mission-vision-1411 {
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-2rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-3rem);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    #cs-wrapper-1411 {
+        display: flex;
+        flex-direction: column;
+    }
+    #reviews-1411 {
+        /* centers the button */
+        text-align: center;
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
+        /* clips the orbs from causing overflow issues */
         overflow: hidden;
         position: relative;
         z-index: 1;
-        width:100%;
     }
-    #mission-vision-1411 .cs-container {
+    #reviews-1411 .cs-container {
         width: 100%;
+        /* changes to 1024px at desktop */
         max-width: 36.5rem;
         margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* 40px - 64px */
         gap: clamp(2.5rem, 5vw, 4rem);
     }
-    #mission-vision-1411 .cs-content {
-        text-align: left;
+    #reviews-1411 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
     }
-    #mission-vision-1411 .cs-title {
+
+    #reviews-1411 .cs-title {
         max-width: 20ch;
         margin: 0;
     }
-    #mission-vision-1411 .cs-flex {
+    #reviews-1411 .cs-flex {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        /* 28px - 60px */
         gap: clamp(1.75rem, 5vw, 3.75rem);
     }
-    #mission-vision-1411 .cs-item {
-        flex: 1;
-        min-width: 0;
+    #reviews-1411 .cs-item {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        display: flex;
+        grid-column: span 12;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
     }
-    #mission-vision-1411 .cs-h3 {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        color: var(--headerColor);
+    #reviews-1411 .cs-quote {
+        width: 5.6875rem;
+        height: auto;
+        opacity: 0.3;
+        display: block;
+        position: absolute;
+        top: -1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
     }
-    #mission-vision-1411 .cs-item-text {
+    #reviews-1411 .cs-item-text {
+        /* 16px - 20px */
         font-size: clamp(1rem, 2.6vw, 1.25rem);
         line-height: 1.5em;
         margin: 0;
         margin-bottom: 1.5rem;
         color: var(--bodyTextColor);
     }
-    #mission-vision-1411 .cs-values-list {
-        list-style-type: none;
-        padding-left: 0;
-        text-align: left;
+    #reviews-1411 .cs-flex-group {
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 8px - 24px */
+        gap: clamp(0.8rem, 1.5vw, 1rem);
     }
-    #mission-vision-1411 .cs-values-list li {
-        margin-bottom: 0.5rem;
+    #reviews-1411 .cs-picture {
+        width: 10rem;
+        height: 10rem;
+        margin: 0;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: 2px solid var(--primary);
+        background-color: var(--primary);
+        display: block;
+        /* sends it to the bottom in the 2nd position */
+        order: 2;
+        /* clips image corners to make circle */
+        overflow: hidden;
+        position: relative;
+    }
+    #reviews-1411 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+    }
+    #reviews-1411 .cs-name {
+        font-size: 1.5625rem;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+        display: block;
+    }
+    #reviews-1411 .cs-job {
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 400;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+    #reviews-1411 .cs-bubbles {
+        font-size: min(2.5vw, 0.7em);
+        width: 35.125em;
+        height: 35.125em;
+        display: none;
+        position: absolute;
+        /* changes to 160px at larger desktop */
+        left: -16.25em;
+        /* changes to 30px at large desktop */
+        bottom: -3.125em;
+        z-index: -1;
+    }
+    #reviews-1411 .cs-bubbles:before {
+        /* white border bubble */
+        content: "";
+        width: 26.25em;
+        height: 26.25em;
+        background: transparent;
+        border: 1px solid #1a1a1a;
+        border-radius: 50%;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        left: 0;
+        animation-name: floatAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #reviews-1411 .cs-bubbles:after {
+        /* orange bubble */
+        content: "";
+        width: 20.6875em;
+        height: 20.6875em;
+        background: var(--primary);
+        opacity: 0.15;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        animation-name: floatAnimation2;
+        animation-duration: 14s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
     }
 }
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #mission-vision-1411 .cs-flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #mission-vision-1411 .cs-item {
-        width: 30%;
-    }
-}
-
-/* Desktop - 1024px */
+/* Desktop - 1204px */
 @media only screen and (min-width: 64rem) {
-    #mission-vision-1411 {
+    #cs-wrapper-1411 {
+        flex-direction: row;
+    }
+    #reviews-1411 {
         width: 50%;
+        /* 40px - 80px */
         padding-left: clamp(2.5rem, 5vw, 5rem);
         padding-right: clamp(2.5rem, 5vw, 5rem);
     }
-     #cs-wrapper-1411 {
-        flex-direction: row;
-    }
-    #mission-vision-1411 .cs-container {
-        align-items: flex-start;
-        margin-left: 0;
-    }
-    #mission-vision-1411 .cs-content {
+    #reviews-1411 .cs-content {
         text-align: left;
         align-items: flex-start;
     }
-    #mission-vision-1411 .cs-flex {
-        gap: 2rem;
-    }
-    #mission-vision-1411 .cs-item {
+    #reviews-1411 .cs-flex,
+    #reviews-1411 .cs-item {
         text-align: left;
+        align-items: flex-start;
+    }
+    #reviews-1411 .cs-quote {
+        left: 0;
+        transform: none;
     }
 }
-
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #mission-vision-1411 .cs-container {
-        max-width: 90rem;
+    #reviews-1411 .cs-container {
+        margin-right: 0;
+    }
+    #reviews-1411 .cs-flex {
+        flex-direction: row;
+    }
+    #reviews-1411 .cs-picture {
+        /* sends it to the left in the 1st position */
+        order: -1;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+    #reviews-1411 .cs-bubbles {
+        display: block;
+        margin-right: 15.625rem;
+        left: auto;
+        right: 50%;
     }
 }
-
 /*-- -------------------------- -->
 <---            FAQ             -->
 <--- -------------------------- -*/
