@@ -134,7 +134,7 @@
     }
    #mission-vision-1411 .cs-flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         /* 28px - 60px */
         gap: clamp(1.75rem, 5vw, 3.75rem);
