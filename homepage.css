@@ -906,14 +906,12 @@
     }
 
     #timeline-504 .cs-topper,
+    #timeline-504 .cs-text,
     #timeline-504 .cs-title {
         width: 100%;
         color: var(--bodyTextColorWhite);
     }
     #timeline-504 .cs-text {
-        width: 100%;
-        max-width: none; /* Remove any max-width restriction */
-        color: var(--bodyTextColorWhite);
         opacity: 0.8;
     }
     #timeline-504 .cs-color {
