@@ -97,7 +97,7 @@
         display: flex;
         flex-direction: column;
     }
-    #reviews-1411 {
+    #mission-vision-1411 {
         /* centers the button */
         text-align: center;
         padding: var(--sectionPadding);
@@ -107,7 +107,7 @@
         position: relative;
         z-index: 1;
     }
-    #reviews-1411 .cs-container {
+    #mission-vision-1411 .cs-container {
         width: 100%;
         /* changes to 1024px at desktop */
         max-width: 36.5rem;
@@ -118,7 +118,7 @@
         /* 40px - 64px */
         gap: clamp(2.5rem, 5vw, 4rem);
     }
-    #reviews-1411 .cs-content {
+    #mission-vision-1411 .cs-content {
         /* set text align to left if content needs to be left aligned */
         text-align: center;
         width: 100%;
@@ -128,18 +128,31 @@
         align-items: center;
     }
 
-    #reviews-1411 .cs-title {
+    #mission-vision-1411 .cs-title {
         max-width: 20ch;
         margin: 0;
     }
-    #reviews-1411 .cs-flex {
+   #mission-vision-1411 .cs-flex {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         /* 28px - 60px */
         gap: clamp(1.75rem, 5vw, 3.75rem);
     }
-    #reviews-1411 .cs-item {
+    #mission-vision-1411 .cs-h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--headerColor);
+    }
+    /* Style the values list */
+#mission-vision-1411 .cs-values-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+    #mission-vision-1411 .cs-values-list li {
+    margin-bottom: 0.5rem;
+}
+    #mission-vision-1411 .cs-item {
         list-style: none;
         text-align: center;
         padding: 0;
@@ -151,7 +164,7 @@
         position: relative;
         z-index: 1;
     }
-    #reviews-1411 .cs-quote {
+    #mission-vision-1411 .cs-quote {
         width: 5.6875rem;
         height: auto;
         opacity: 0.3;
@@ -162,7 +175,7 @@
         transform: translateX(-50%);
         z-index: -1;
     }
-    #reviews-1411 .cs-item-text {
+    #mission-vision-1411 .cs-item-text {
         /* 16px - 20px */
         font-size: clamp(1rem, 2.6vw, 1.25rem);
         line-height: 1.5em;
@@ -170,7 +183,7 @@
         margin-bottom: 1.5rem;
         color: var(--bodyTextColor);
     }
-    #reviews-1411 .cs-flex-group {
+    #mission-vision-1411 .cs-flex-group {
         /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
         margin-top: auto;
         display: flex;
@@ -179,7 +192,7 @@
         /* 8px - 24px */
         gap: clamp(0.8rem, 1.5vw, 1rem);
     }
-    #reviews-1411 .cs-picture {
+    #mission-vision-1411 .cs-picture {
         width: 10rem;
         height: 10rem;
         margin: 0;
@@ -194,7 +207,7 @@
         overflow: hidden;
         position: relative;
     }
-    #reviews-1411 .cs-picture img {
+    #mission-vision-1411 .cs-picture img {
         position: absolute;
         top: 0;
         left: 0;
@@ -203,7 +216,7 @@
         /* makes the image behave like a background image */
         object-fit: cover;
     }
-    #reviews-1411 .cs-name {
+    #mission-vision-1411 .cs-name {
         font-size: 1.5625rem;
         line-height: 1.2em;
         font-weight: 700;
@@ -211,7 +224,7 @@
         color: var(--headerColor);
         display: block;
     }
-    #reviews-1411 .cs-job {
+    #mission-vision-1411 .cs-job {
         font-size: 1rem;
         line-height: 1.5em;
         font-weight: 400;
@@ -219,7 +232,7 @@
         color: var(--bodyTextColor);
         display: block;
     }
-    #reviews-1411 .cs-bubbles {
+    #mission-vision-1411 .cs-bubbles {
         font-size: min(2.5vw, 0.7em);
         width: 35.125em;
         height: 35.125em;
@@ -231,7 +244,7 @@
         bottom: -3.125em;
         z-index: -1;
     }
-    #reviews-1411 .cs-bubbles:before {
+    #mission-vision-1411 .cs-bubbles:before {
         /* white border bubble */
         content: "";
         width: 26.25em;
@@ -250,7 +263,7 @@
         animation-fill-mode: forwards;
         animation-iteration-count: infinite;
     }
-    #reviews-1411 .cs-bubbles:after {
+    #mission-vision-1411 .cs-bubbles:after {
         /* orange bubble */
         content: "";
         width: 20.6875em;
@@ -275,41 +288,45 @@
     #cs-wrapper-1411 {
         flex-direction: row;
     }
-    #reviews-1411 {
+    #mission-vision-1411 {
         width: 50%;
         /* 40px - 80px */
         padding-left: clamp(2.5rem, 5vw, 5rem);
         padding-right: clamp(2.5rem, 5vw, 5rem);
     }
-    #reviews-1411 .cs-content {
+    #mission-vision-1411 .cs-content {
         text-align: left;
         align-items: flex-start;
     }
-    #reviews-1411 .cs-flex,
-    #reviews-1411 .cs-item {
+    #mission-vision-1411 .cs-flex{
+        flex-direction: row;
+        justify-content:space-between;
+    }
+    #mission-vision-1411 .cs-item {
         text-align: left;
         align-items: flex-start;
+        width: 30%;
     }
-    #reviews-1411 .cs-quote {
+    #mission-vision-1411 .cs-quote {
         left: 0;
         transform: none;
     }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #reviews-1411 .cs-container {
+    #mission-vision-1411 .cs-container {
         margin-right: 0;
     }
-    #reviews-1411 .cs-flex {
+    #mission-vision-1411 .cs-flex {
         flex-direction: row;
     }
-    #reviews-1411 .cs-picture {
+    #mission-vision-1411 .cs-picture {
         /* sends it to the left in the 1st position */
         order: -1;
         /* prevents flexbox from squishing it */
         flex: none;
     }
-    #reviews-1411 .cs-bubbles {
+    #mission-vision-1411 .cs-bubbles {
         display: block;
         margin-right: 15.625rem;
         left: auto;
