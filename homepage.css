@@ -1066,7 +1066,6 @@
 @media only screen and (min-width: 0rem) {
     #services-1378 {
         padding: var(--sectionPadding);
-        background-color: #f4f4f4; /* Set the background color of the section to light grey */
     }
     #services-1378 .cs-container {
         width: 100%;
@@ -1118,7 +1117,7 @@
         /* 16px - 40px */
         padding: clamp(1rem, 3vw, 2.5rem);
         padding-top: 0;
-        background-color: #ffffff; /* Set the background color of each card to white */
+        background-color: #f4f4f4;
         border-radius: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -1129,6 +1128,9 @@
         transition: background-color 0.3s;
     }
     #services-1378 .cs-item:hover {
+        background-color: var(--primary);
+    }
+    #services-1378 .cs-item:hover .cs-picture {
         background-color: var(--primary);
     }
     #services-1378 .cs-item:hover .cs-icon,
@@ -1144,7 +1146,6 @@
     }
     #services-1378 .cs-item:hover .cs-link {
         border-color: #fff;
-        background-color: #2c3e50;
     }
     #services-1378 .cs-picture {
         width: 5.5rem;
