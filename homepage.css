@@ -132,93 +132,6 @@
         max-width: 20ch;
         margin: 0;
     }
-    #reviews-1411 .cs-flex {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 28px - 60px */
-        gap: clamp(1.75rem, 5vw, 3.75rem);
-    }
-    #reviews-1411 .cs-item {
-        list-style: none;
-        text-align: center;
-        padding: 0;
-        display: flex;
-        grid-column: span 12;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        z-index: 1;
-    }
-    #reviews-1411 .cs-quote {
-        width: 5.6875rem;
-        height: auto;
-        opacity: 0.3;
-        display: block;
-        position: absolute;
-        top: -1.25rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: -1;
-    }
-    #reviews-1411 .cs-item-text {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 2.6vw, 1.25rem);
-        line-height: 1.5em;
-        margin: 0;
-        margin-bottom: 1.5rem;
-        color: var(--bodyTextColor);
-    }
-    #reviews-1411 .cs-flex-group {
-        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
-        margin-top: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* 8px - 24px */
-        gap: clamp(0.8rem, 1.5vw, 1rem);
-    }
-    #reviews-1411 .cs-picture {
-        width: 10rem;
-        height: 10rem;
-        margin: 0;
-        border-radius: 50%;
-        box-sizing: border-box;
-        border: 2px solid var(--primary);
-        background-color: var(--primary);
-        display: block;
-        /* sends it to the bottom in the 2nd position */
-        order: 2;
-        /* clips image corners to make circle */
-        overflow: hidden;
-        position: relative;
-    }
-    #reviews-1411 .cs-picture img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        /* makes the image behave like a background image */
-        object-fit: cover;
-    }
-    #reviews-1411 .cs-name {
-        font-size: 1.5625rem;
-        line-height: 1.2em;
-        font-weight: 700;
-        margin: 0;
-        color: var(--headerColor);
-        display: block;
-    }
-    #reviews-1411 .cs-job {
-        font-size: 1rem;
-        line-height: 1.5em;
-        font-weight: 400;
-        margin: 0;
-        color: var(--bodyTextColor);
-        display: block;
-    }
     #reviews-1411 .cs-bubbles {
         font-size: min(2.5vw, 0.7em);
         width: 35.125em;
@@ -285,29 +198,11 @@
         text-align: left;
         align-items: flex-start;
     }
-    #reviews-1411 .cs-flex,
-    #reviews-1411 .cs-item {
-        text-align: left;
-        align-items: flex-start;
-    }
-    #reviews-1411 .cs-quote {
-        left: 0;
-        transform: none;
-    }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #reviews-1411 .cs-container {
         margin-right: 0;
-    }
-    #reviews-1411 .cs-flex {
-        flex-direction: row;
-    }
-    #reviews-1411 .cs-picture {
-        /* sends it to the left in the 1st position */
-        order: -1;
-        /* prevents flexbox from squishing it */
-        flex: none;
     }
     #reviews-1411 .cs-bubbles {
         display: block;
