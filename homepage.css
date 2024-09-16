@@ -890,7 +890,7 @@
         max-width: 34.375rem;
         margin: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         /* 48px - 64px */
         gap: clamp(3rem, 6vw, 4rem);
