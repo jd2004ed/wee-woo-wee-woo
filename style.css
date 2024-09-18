@@ -903,7 +903,7 @@
         left: 0;
         z-index: 1;
     }
-    #banner-1400:before {
+    #banner-1400 .cs-background:after {
         /* gradient overlay */
         content: "";
         width: 100%;
