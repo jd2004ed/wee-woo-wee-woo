@@ -1,356 +1,243 @@
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---          Audit Form           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  @keyframes floatAnimation {
-    0% {
-      transform: translateY(0);
+    #contact-1389 {
+        padding: var(--sectionPadding);
+        background-color: #f7f7f7;
+        position: relative;
+        z-index: 1;
     }
-    50% {
-      transform: translateY(-2rem);
+    #contact-1389 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 36.5rem;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-direction: column;
+        column-gap: auto;
+        /* 48px - 64px */
+        gap: clamp(2rem, 3vw, 3rem);
+        position: relative;
     }
-    100% {
-      transform: translateY(0);
+    #contact-1389 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
     }
-  }
-  @keyframes floatAnimation2 {
-    0% {
-      transform: translateY(0);
+
+    #contact-1389 .cs-title {
+        max-width: 23ch;
     }
-    50% {
-      transform: translateY(-3rem);
+    #contact-1389 .cs-text {
+        margin-bottom: 1rem;
     }
-    100% {
-      transform: translateY(0);
+    #contact-1389 .cs-text:last-of-type {
+        margin-bottom: 2rem;
     }
-  }
-  #sbs-1359 {
-    padding: var(--sectionPadding);
-    position: relative;
-    z-index: 11;
-  }
-  #sbs-1359 .cs-container {
-    width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 39.375rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.3vw, 1.25rem);
-  }
-  #sbs-1359 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    max-width: 39.375rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #sbs-1359 .cs-topper {
-    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
-    color: #767676;
-  }
-  #sbs-1359 .cs-title {
-    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
-    max-width: 25ch;
-  }
-  #sbs-1359 .cs-text {
-    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
-    margin-bottom: 1rem;
-  }
-  #sbs-1359 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #sbs-1359 .cs-h3 {
-    /* 16px - 30px */
-    font-size: clamp(1rem, 2.4vw, 1.25rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    max-width: 37ch;
-    /* 16px - 24px */
-    margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
-    color: var(--primary);
-  }
-  #sbs-1359 .cs-button-solid {
-    font-size: 1rem;
-    line-height: 3.5rem;
-    text-decoration: none;
-    font-weight: 700;
-    overflow: hidden;
-    margin: 0;
-    color: #fff;
-    padding: 0 3rem;
-    border-radius: 1.875rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color .3s;
-  }
-  #sbs-1359 .cs-button-solid:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 0%;
-    background: #1a1a1a;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width .3s;
-  }
-  #sbs-1359 .cs-button-solid:hover {
-    color: var(--primary);
-  }
-  #sbs-1359 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #sbs-1359 .cs-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  #sbs-1359 .cs-bubbles {
-    width: 29.625rem;
-    height: 20.625rem;
-    position: absolute;
-    /* changes to 160px at larger desktop */
-    left: -16.25rem;
-    bottom: -8.75rem;
-    z-index: -1;
-  }
-  #sbs-1359 .cs-bubbles:before {
-    /* white border bubble */
-    content: '';
-    width: 20.625rem;
-    height: 20.625rem;
-    background: transparent;
-    border: 1px solid #1A1A1A;
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    animation-name: floatAnimation;
-    animation-duration: 5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-  }
-  #sbs-1359 .cs-bubbles:after {
-    /* orange bubble */
-    content: '';
-    width: 16.25rem;
-    height: 16.25rem;
-    background: var(--primary);
-    opacity: .15;
-    border-radius: 50%;
-    display: block;
-    position: absolute;
-    bottom: 1.875rem;
-    right: 0;
-    z-index: -1;
-    animation-name: floatAnimation2;
-    animation-duration: 14s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-  }
-  #sbs-1359 .cs-picture {
-    width: 100%;
-    height: 20.5rem;
-    border-radius: 3rem;
-    /* clips the corners of the img tag */
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  #sbs-1359 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-  }
+    #contact-1389 .cs-ul {
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        position: relative;
+    }
+    #contact-1389 .cs-li {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    #contact-1389 .cs-li:hover .cs-icon-wrapper {
+        transform: scale(1.1);
+    }
+    #contact-1389 .cs-header {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2em;
+        margin-bottom: 0.75rem;
+        color: var(--headerColor);
+        display: block;
+    }
+    #contact-1389 .cs-link {
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-decoration: none;
+        color: #767676;
+        display: block;
+        position: relative;
+    }
+    #contact-1389 .cs-link:hover {
+        text-decoration: underline;
+    }
+    #contact-1389 .cs-icon-wrapper {
+        width: 3.75rem;
+        height: 3.75rem;
+        margin: 0;
+        border-radius: 50%;
+        border: 1px solid #bababa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        transition: transform 0.3s;
+    }
+    #contact-1389 .cs-icon {
+        width: 1.5rem;
+        height: auto;
+        display: block;
+    }
+    #contact-1389 .cs-form {
+        width: 100%;
+        max-width: 39.375rem;
+        /* 24px - 48px top and bottom */
+        /* 16px - 48px left and right */
+        padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
+        /* prevents flexbox from affecting height and width */
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    #contact-1389 .cs-h3 {
+        /* 20px - 39px */
+        font-size: clamp(1.25rem, 3vw, 2.4375rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 0 0.25rem 0;
+        color: var(--headerColor);
+    }
+    #contact-1389 .cs-label {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        width: 100%;
+        color: var(--headerColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    #contact-1389 .cs-input {
+        font-size: 1rem;
+        width: 100%;
+        height: 3.5rem;
+        padding: 0;
+        padding-left: 1.5rem;
+        color: var(--headerColor);
+        background-color: #f7f7f7;
+        border-radius: 0.5rem;
+        border: none;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+    }
+    #contact-1389 .cs-input::placeholder {
+        color: #7d799c;
+        opacity: 0.6;
+    }
+    #contact-1389 .cs-textarea {
+        min-height: 7.5rem;
+        padding-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-family: inherit;
+    }
+    #contact-1389 .cs-button-solid {
+        font-size: 1rem;
+        line-height: 3.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        overflow: hidden;
+        margin: 0;
+        color: #fff;
+        padding: 0 3rem;
+        border-radius: 1.875rem;
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: color 0.3s;
+    }
+    #contact-1389 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 0%;
+        background: #1a1a1a;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s;
+    }
+    #contact-1389 .cs-button-solid:hover {
+        color: var(--primary);
+    }
+    #contact-1389 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #contact-1389 .cs-submit {
+        width: 100%;
+        min-width: 12.5rem;
+        border: none;
+    }
+    #contact-1389 .cs-submit:hover {
+        color: #fff;
+        cursor: pointer;
+    }
 }
-/* Tablet - 600px */
-@media only screen and (min-width: 37.5rem) {
-  #sbs-1359 {
-    padding-bottom: 0;
-  }
-  #sbs-1359 .cs-container {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #sbs-1359 .cs-content {
-    width: 85%;
-    order: -1;
-  }
-  #sbs-1359 .cs-picture {
-    width: 45%;
-    max-width: 19.0625rem;
-    margin-bottom: -3.75rem;
-  }
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #contact-1389 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #contact-1389 .cs-content {
+        width: 47%;
+        /* prevents flexbox from squishing it */
+        flex: none;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+    #contact-1389 .cs-submit {
+        width: auto;
+    }
 }
-/* Small Desktop - 1024px */
+/* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbs-1359 {
-    padding-top: 0;
-  }
-  #sbs-1359 .cs-container {
-    max-width: 80rem;
-    flex-wrap: nowrap;
-  }
-  #sbs-1359 .cs-content {
-    /* 80px - 140px */
-    padding: clamp(5rem, 10vw, 8.75rem) 0;
-    order: initial;
-  }
-  #sbs-1359 .cs-bubbles {
-    /* reset at large deskop */
-    left: -12.0625rem;
-    bottom: -8.125rem;
-  }
-  #sbs-1359 .cs-picture {
-    width: 37%;
-    /* 230px - 340px */
-    height: clamp(14.375rem, 24vw, 21.25rem);
-  }
-  #sbs-1359 .cs-picture1 {
-    align-self: flex-start;
-    margin-bottom: 0;
-    margin-top: -3.75rem;
-  }
-  #sbs-1359 .cs-picture2 {
-    align-self: flex-end;
-  }
-}
-/* Large Desktop 1600px */
-@media only screen and (min-width: 100rem) {
-  #sbs-1359 .cs-bubbles {
-    margin-right: 31.25rem;
-    left: auto;
-    right: 50%;
-  }
-}
-/*-- -------------------------- -->
-<---         #shc-container           -->
-<--- -------------------------- -*/
-
-.custom-health-check {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-}
-
-#shc-container {
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Styling child elements */
-#shc-container input[type="text"],
-#shc-container input[type="email"],
-#shc-container select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-/* Base button styles */
-#shc-container button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Active state for touch devices */
-#shc-container button:active {
-    background-color: #45a049;
-    transform: scale(0.98);
-}
-
-/* Ripple effect */
-#shc-container button::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
-    background: rgba(255, 255, 255, 0.5);
-    opacity: 0;
-    border-radius: 100%;
-    transform: scale(1, 1) translate(-50%);
-    transform-origin: 50% 50%;
-}
-
-@keyframes ripple {
-    0% {
-        transform: scale(0, 0);
-        opacity: 1;
+    #contact-1389 .cs-form {
+        width: 46%;
+        max-width: 36.125rem;
     }
-    20% {
-        transform: scale(25, 25);
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(40, 40);
+    #contact-1389 .cs-submit {
+        width: auto;
     }
 }
-
-#shc-container button:focus:not(:active)::after {
-    animation: ripple 1s ease-out;
-}
-
-/* Pulsating animation */
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+/* Large Desktop - 1500px */
+@media only screen and (min-width: 93.75rem) {
+    #contact-1389 .cs-graphic {
+        display: block;
     }
-    70% {
-        box-shadow: 0 0 0 10px rgba(76, 175, 80, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
-    }
-}
-
-#shc-container button:focus {
-    animation: pulse 1.5s infinite;
-}
-
-#shc-container button:hover {
-    background-color: #45a049;
 }
 /*-- -------------------------- -->
 <---          Banner            -->
