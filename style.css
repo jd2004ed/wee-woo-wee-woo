@@ -903,30 +903,6 @@
         left: 0;
         z-index: 1;
     }
-    #banner-1400 .cs-background:after {
-        /* gradient overlay */
-        content: "";
-        width: 150%;
-        height: 100%;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(#2c3e50)),
-            to(rgba(44, 62, 80, 0))
-        );
-        background: -o-linear-gradient(top, #2c3e50 0%, rgba(44, 62, 80, 0) 100%);
-        background: linear-gradient(
-            to bottom,
-            #2c3e50 0%,
-            rgba(44, 62, 80, 0) 100%
-        );
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
     #banner-1400 .cs-background img {
         position: absolute;
         top: 0;
