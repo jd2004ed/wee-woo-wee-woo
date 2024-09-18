@@ -901,24 +901,24 @@
         display: block;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: 1;
     }
-    #banner-1400 .cs-background:after {
+    #banner-1400:before {
         /* gradient overlay */
         content: "";
         width: 100%;
-        height: 100%;
+        height: 300%;
         background: -webkit-gradient(
             linear,
             left top,
             left bottom,
-            from(rgba(44, 62, 80, .8)),
+            from(#2c3e50)),
             to(rgba(44, 62, 80, 0))
         );
-        background: -o-linear-gradient(top, rgba(44, 62, 80, .8) 0%, rgba(44, 62, 80, 0) 100%);
+        background: -o-linear-gradient(top, #2c3e50 0%, rgba(44, 62, 80, 0) 100%);
         background: linear-gradient(
             to bottom,
-            rgba(44, 62, 80, .8) 0%,
+            #2c3e50 0%,
             rgba(44, 62, 80, 0) 100%
         );
         position: absolute;
