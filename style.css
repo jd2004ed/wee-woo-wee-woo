@@ -906,7 +906,7 @@
     #banner-1400 .cs-background:after {
         /* gradient overlay */
         content: "";
-        width: 100%;
+        width: 150%;
         height: 100%;
         background: -webkit-gradient(
             linear,
