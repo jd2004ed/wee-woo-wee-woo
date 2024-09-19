@@ -913,13 +913,13 @@
             left top,
             right bottom,
             from(#2c3e50),
-            to(rgba(0, 0, 0, 0))
+            to(rgba(44, 62, 80, 0.8))
         );
-        background: -o-linear-gradient(top, #2c3e50 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(top, #2c3e50 0%, rgba(44, 62, 80, 0.8) 100%);
         background: linear-gradient(
             to bottom,
             #2c3e50 0%,
-            rgba(0, 0, 0, 0) 100%
+            rgba(44, 62, 80, 0.8) 100%
         );
         position: absolute;
         display: block;
@@ -947,13 +947,13 @@
             left top,
             right bottom,
             from(#2c3e50),
-            to(rgba(0, 0, 0, 0))
+            to(rgba(44, 62, 80, 0.8))
         );
-        background: -o-linear-gradient(top, #2c3e50 0%, rgba(0, 0, 0, 0) 100%);
+        background: -o-linear-gradient(top, #2c3e50 0%, rgba(44, 62, 80, 0.8) 100%);
         background: linear-gradient(
             to bottom,
             #2c3e50 0%,
-            rgba(0, 0, 0, 0) 100%
+            rgba(44, 62, 80, 0.8) 100%
         );
         opacity: 1;
     }
