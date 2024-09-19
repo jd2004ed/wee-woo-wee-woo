@@ -497,7 +497,7 @@
         transition: color 0.3s;
     }
     #pricing-357 .cs-popular .cs-button-solid:before {
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
     #pricing-357 .cs-popular .cs-button-solid:hover {
         color: #fff;
@@ -621,7 +621,7 @@
         position: absolute;
         height: 100%;
         width: 0%;
-        background: #000;
+        background: #2c3e50;
         opacity: 1;
         top: 0;
         left: 0;
