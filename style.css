@@ -459,7 +459,7 @@
         transition-delay: 0.2s;
     }
     #pricing-357 .cs-popular {
-        background: var(--primary);
+        background: #2c3e50;
         position: relative;
         /* clips the popular tag */
         overflow: hidden;
